@@ -1,0 +1,14 @@
+{
+  "name": "linkup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "dev": "live-server ./ --port=8082"
+  },
+  "author": "sakowei",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
