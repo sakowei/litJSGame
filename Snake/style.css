@@ -1,0 +1,67 @@
+@charset "UTF-8";
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+  overflow: hidden;
+}
+
+#game {
+  position: relative;
+  width: 500px;
+  height: 550px;
+  border: 1px solid #333;
+}
+
+#ground {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+
+#button {
+  position: absolute;
+  right: 1rem;
+  bottom: 0rem;
+}
+
+button {
+  margin: 10px 0;
+  width: 50px;
+  height: 25px;
+  border: 0;
+  cursor: pointer;
+  background-color: #8d964a;
+  transition: transform .2s ease-in-out;
+}
+
+button:hover {
+  transform: scale(.9);
+}
+
+.block {
+  width: 20px;
+  height: 20px;
+  float: left;
+  background-color: #8d964a;
+}
+
+.snake-body {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #292A1B;
+}
+
+.food {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #292A1B;
+}
