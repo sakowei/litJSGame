@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="tic.css">
+</head>
+<body>
+  <div class="app">
+    <div class="game" id="game">
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block" id="a"></div>
+  
+      <div class="line" id="line0"></div>
+      <div class="line" id="line1"></div>
+      <div class="line" id="line2"></div>
+      <div class="line" id="line3"></div>
+    </div>
+  
+    <div class="modal" id="start">
+      <div id="select-box" class="box">
+        <div id="selectO" class="choose">
+          <div class="o"></div>
+        </div>
+        <div id="selectX" class="choose">
+          <div class="x"></div>
+        </div>
+        <div class="info" id="info-1">first</div>
+        <div class="info" id="info-2">choose one</div>
+      </div>
+    </div>
+  
+    <div class="modal" id="end">
+      <div class="box" id="end-box">
+        <div id="end-info"></div>
+        <div class="circle"></div>
+        <div class="info" id="btn-restart">restart</div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="tactoe.js"></script>
+</html>

@@ -1,0 +1,214 @@
+@charset "UTF-8";
+/* @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400&display=swap'); */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100dvh;
+  height: 100dvh;
+  background-color: #eee;
+  font-family: Dosis, sans-serif;
+  text-transform: uppercase;
+  color: #bbb;
+}
+
+.app {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.game {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -240px;
+  margin-left: -240px;
+  width: 480px;
+  height: 480px;
+  border-radius: 10px;
+  background-color: #fcfcfc;
+  box-shadow: 0 0 8px #777 inset;
+}
+
+.game .block {
+  position: relative;
+  float: left;
+  width: 160px;
+  height: 160px;
+  cursor: pointer;
+}
+
+.game .line {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #dedede;
+}
+
+.game #line0 {
+  top: 315px;
+  left: 15px;
+  width: 450px;
+}
+
+.game #line1 {
+  top: 157px;
+  left: 15px;
+  width: 450px;
+}
+
+.game #line2 {
+  top: 15px;
+  left: 157px;
+  height: 450px;
+}
+
+.game #line3 {
+  top: 15px;
+  left: 317px;
+  height: 450px;
+}
+
+.o {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  margin-top: -60px;
+  margin-left: -60px;  
+  border: 10px solid #4ad52e;
+  border-radius: 100px;
+}
+
+.x {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -60px;
+  margin-left: -60px;
+  width: 120px;
+  height: 120px;
+}
+
+.x::before, .x::after {
+  position: absolute;
+  top: -20px;
+  left: 55px;
+  content: "";
+  display: block;
+  width: 10px;
+  height: 160px;
+  background-color: #488fda;
+  border-radius: 5px;
+}
+
+.x::before {transform: rotate(-45deg);}
+
+.x::after {transform: rotate(45deg);}
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.4);
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -190px;
+  margin-top: -100px;
+  padding: 20px;
+  width: 340px;
+  height: 160px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 30px #666;
+}
+
+#select-box .now {border-bottom: 5px solid #ddd;}
+
+.choose {
+  position: relative;
+  float: left;
+  width: 160px;
+  height: 160px;
+  cursor: pointer;
+}
+
+#selectO {margin-right: 20px;}
+
+.info {
+  position: absolute;
+  padding: 0 15px;
+  border-radius: 10px;
+  background-color: #fff;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.info::before {
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: "";
+  border: 10px solid transparent;
+}
+
+#info-1 {
+  top: -100px;
+  right: 0;
+}
+
+#info-1::before {
+  left: 20px;
+  bottom: -20px;
+  border-top-color: #fff;
+}
+
+#info-2 {
+  bottom: -100px;
+  left: 0;
+}
+
+#info-2::before {
+  top: -20px;
+  right: 80px;
+  border-bottom-color: #fff;
+}
+
+#end {display: none;}
+
+#end-box #end-info {
+  font-size: 100px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 160px;
+}
+
+#end-box .circle {
+  position: absolute;
+  top: 50%;
+  right: -60px;
+  width: 100px;
+  height: 100px;
+  margin-top: -60px;
+  border: 10px solid #feb323;
+  border-radius: 100px;
+}
+
+#end #btn-restart {
+  top: 66px;
+  right: -240px;
+  cursor: pointer;
+}
